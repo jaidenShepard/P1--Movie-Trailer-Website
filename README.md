@@ -1,4 +1,4 @@
-Movie Trailer Project Version 1.0 2016/01/07
+Movie Trailer Project Version 1.1 2016/01/07
 
 #What you'll need
 - A modern web browser
