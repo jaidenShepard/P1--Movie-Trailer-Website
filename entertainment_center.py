@@ -1,12 +1,13 @@
 import media
 import fresh_tomatoes
 
+# Initialization of all the movies to be included on the site
 matrix = media.Movie("The Matrix",
                      "http://moviefiles.alphacoders.com/288/poster-28.jpg",
                      "https://www.youtube.com/watch?v=vKQi3bBA1y8",
                      "1999",
                      "The Wachowski Brothers",
-                     "The Wachoski Brothers",
+                     "The Wachowski Brothers",
                      "Keanu Reeves, Laurence Fishburne, Carrie-Anne Moss")
 
 kung_fury = media.Movie("Kung Fury",
@@ -32,7 +33,8 @@ terminator_2 = media.Movie("Terminator 2: Judgement Day",
                            "1991",
                            "James Cameron",
                            "James Cameron, WIlliam Wisher Jr.",
-                           "Arnold Schwarzenegger, Linda Hamilton, Edward Furlong",)  # NOQA
+                           "Arnold Schwarzenegger, Linda Hamilton, Edward "
+                           "Furlong",)
 
 ex_machina = media.Movie("Ex Machina",
                          "http://resizing.flixster.com/JToNrl2pa0PTlZyqmjPN4vMta9U=/800x1185/dkpu1ddg7pbsk.cloudfront.n"  # NOQA
@@ -51,5 +53,6 @@ ant_man = media.Movie("Ant-Man",
                       "Edgar Wright, Joe Cornish",
                       "Paul Rudd, Michael Douglas, Corey Stoll",)
 
+# Movies are saved into an list, which is passed to the page generating script
 movies = [matrix, kung_fury, star_wars_VII, terminator_2, ex_machina, ant_man]
 fresh_tomatoes.open_movies_page(movies)
